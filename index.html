@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a0f00">
+<meta name="description" content="Pencalonan Ketua Paskibra SMAN 1 Batujaya. Soliditas, Regenerasi, Kualitas Anggota.">
+<meta property="og:title" content="FARID — Calon Ketua Paskibra SMAN 1 Batujaya">
+<meta property="og:description" content="Soliditas, Regenerasi, Kualitas Anggota. Satu barisan, satu keluarga.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="logo.png">
+<title>FARID — Calon Ketua Paskibra SMAN 1 Batujaya</title>
+<style>
+:root{
+  --sun-1:#FFF59D;
+  --sun-2:#FFE066;
+  --sun-3:#FFC93C;
+  --sun-4:#FFA500;
+  --sun-5:#FF8C00;
+  --sun-6:#FFA000;
+  --navy:#1a0f00;
+  --navy2:#2d1a05;
+  --navy3:#3d2408;
+  --cream:#FFF8E1;
+  --ink:#2d1a05;
+  --muted:#c9b896;
+  --line:rgba(255,200,80,.14);
+  --panel:rgba(255,200,80,.06);
+  --gold:var(--sun-3);
+  --sky:var(--sun-2);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:#fdf9ee;color:var(--ink)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:transparent;color:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+
+header{position:sticky;top:0;z-index:50;color:white;background:linear-gradient(125deg,#1a0f00,#2d1a05 65%,#3d2408);border-bottom:1px solid rgba(255,200,80,.18);backdrop-filter:blur(12px)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.03em;color:#FFF8E1}
+.crest{width:56px;height:56px;display:block;object-fit:contain;background:transparent}
+.brand small{display:block;color:#e8d5a8;font-size:10px;letter-spacing:.16em;font-weight:600;margin-top:3px}
+.brand>span>span:first-child{font-size:13px}
+.navlinks{display:flex;align-items:center;gap:6px;font-size:12px;color:#f0e2c0;overflow:auto;scrollbar-width:none}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks button{padding:9px 12px;border-radius:8px;font-weight:700;letter-spacing:.04em;white-space:nowrap;transition:.22s;color:#f0e2c0}
+.navlinks button:hover{color:var(--sun-3);background:rgba(255,200,80,.08)}
+.navlinks button.active{color:var(--sun-3);background:rgba(255,200,80,.1)}
+.navlinks button.active:after{content:"";display:block;height:2px;margin-top:6px;border-radius:99px;background:var(--sun-3)}
+.navcta{border:1px solid var(--sun-3);padding:11px 16px;border-radius:3px;color:var(--sun-3);font-size:12px;font-weight:750;white-space:nowrap;transition:.22s}
+.navcta:hover{background:var(--sun-3);color:var(--navy)}
+.navtoggle{display:none;width:40px;height:40px;border-radius:8px;border:1px solid rgba(255,200,80,.3);color:#FFF8E1;font-size:18px;place-items:center}
+
+.view{display:none}
+.view.active{display:block;animation:viewIn .45s ease}
+@keyframes viewIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+section{padding:94px 0}
+.section-kicker{color:#b87400;text-transform:uppercase;letter-spacing:.2em;font-size:10px;font-weight:900}
+.section-title{font-size:clamp(32px,4vw,52px);line-height:1.08;letter-spacing:-.045em;margin:14px 0 18px;color:var(--navy)}
+.section-intro{max-width:690px;line-height:1.85;color:#7a6647;font-size:14px}
+
+.hero{min-height:640px;display:flex;align-items:center;position:relative;overflow:hidden;color:#FFF8E1;
+  background:
+    radial-gradient(ellipse at 78% 25%, rgba(255,165,0,.45) 0%, transparent 40%),
+    radial-gradient(ellipse at 20% 100%, rgba(255,140,0,.35) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(255,200,80,.12) 0%, transparent 60%),
+    linear-gradient(125deg,#1a0f00,#2d1a05 55%,#3d2408 100%);
+}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,200,80,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,200,80,.05) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,#000,transparent 95%)}
+.orb{position:absolute;border:1px solid rgba(255,200,80,.2);border-radius:50%;width:470px;height:470px;right:-90px;top:155px;box-shadow:0 0 0 45px rgba(255,200,80,.04),0 0 0 95px rgba(255,200,80,.03)}
+.hero-inner{position:relative;z-index:1;padding:80px 0 60px;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+.eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(--sun-2);font-weight:800}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--sun-3)}
+h1{font-size:clamp(48px,7vw,92px);line-height:.98;letter-spacing:-.065em;margin:25px 0 20px;font-weight:850;color:#FFF8E1}
+h1 span{display:block;color:#FFE066}
+h1 em{font-style:normal;color:var(--sun-4)}
+.hero-copy{max-width:580px;color:#f0e2c0;line-height:1.8;font-size:15px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 19px;font-size:12px;font-weight:800;border-radius:3px;transition:.25s}
+.btn-gold{background:linear-gradient(135deg,#FFC93C,#FF8C00);color:#1a0f00}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(255,140,0,.35)}
+.btn-outline{border:1px solid rgba(255,200,80,.5);color:#FFF8E1}
+.btn-outline:hover{border-color:var(--sun-3);color:var(--sun-3)}
+.hero-note{margin-top:32px;font-size:11px;color:#c9b896;letter-spacing:.04em}
+.hero-card{position:relative;border:1px solid rgba(255,200,80,.35);border-radius:5px;padding:27px;background:linear-gradient(145deg,rgba(255,200,80,.1),rgba(255,140,0,.04));backdrop-filter:blur(10px);box-shadow:0 25px 65px rgba(0,0,0,.4);transform:rotate(2deg)}
+.hero-card:before{content:"";position:absolute;right:14px;top:14px;width:90px;height:90px;background:url('logo.png') center/contain no-repeat;opacity:.15;pointer-events:none}
+.card-label{color:var(--sun-3);font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:800}
+.hero-card h2{font-size:29px;line-height:1.1;margin:13px 0;color:#FFF8E1}
+.hero-card p{font-size:13px;line-height:1.75;color:#f0e2c0}
+.mini-line{height:1px;background:rgba(255,200,80,.2);margin:23px 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.stats strong{display:block;font-size:24px;color:var(--sun-3)}
+.stats span{font-size:10px;color:#c9b896;line-height:1.4;display:block;margin-top:4px}
+
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:start}
+.quote{background:linear-gradient(135deg,#2d1a05,#1a0f00);color:#FFF8E1;padding:31px;border-radius:5px;position:relative;overflow:hidden;border:1px solid rgba(255,200,80,.15)}
+.quote:after{content:"\201C";position:absolute;right:14px;top:-36px;font-size:170px;color:rgba(255,200,80,.06);font-family:Georgia}
+.quote p{font-size:20px;line-height:1.55;font-weight:650;position:relative;z-index:1}
+.quote small{color:var(--sun-3);letter-spacing:.12em;text-transform:uppercase;font-size:10px}
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}
+.pillar{padding:19px;border:1px solid #f0e2c0;border-radius:4px;background:#fffdf7}
+.num{font-size:11px;color:#b87400;font-weight:900;letter-spacing:.1em}
+.pillar h3{font-size:16px;margin:12px 0 7px;color:var(--navy)}
+.pillar p{font-size:12px;line-height:1.7;color:#7a6647;margin:0}
+
+.dark{
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(255,165,0,.25) 0%, transparent 45%),
+    radial-gradient(ellipse at 10% 90%, rgba(255,140,0,.15) 0%, transparent 50%),
+    linear-gradient(125deg,#1a0f00,#2d1a05 60%,#3d2408);
+  color:#FFF8E1;
+}
+.dark .section-title{color:#FFF8E1}
+.dark .section-intro{color:#e8d5a8}
+.dark .section-kicker{color:var(--sun-3)}
+.themeband{border:1px solid rgba(255,200,80,.25);padding:32px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;margin-top:32px;background:linear-gradient(110deg,rgba(255,200,80,.08),rgba(255,140,0,.03))}
+.themeband h3{font-size:clamp(23px,3vw,36px);margin:0 0 9px;letter-spacing:-.03em;color:#FFF8E1}
+.themeband p{margin:0;color:#e8d5a8;line-height:1.7;font-size:13px}
+.theme-mark{font-size:38px;color:var(--sun-3)}
+
+.roles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+.role{background:#fffdf7;border:1px solid #f0e2c0;padding:25px;border-radius:4px;transition:.25s}
+.role:hover{transform:translateY(-5px);box-shadow:0 18px 35px rgba(184,116,0,.12);border-color:var(--sun-3)}
+.role-icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#FFF59D,#FFC93C);color:#8a5000;font-size:18px}
+.role h3{font-size:17px;color:var(--navy);margin:18px 0 9px}
+.role p{font-size:12px;line-height:1.8;color:#7a6647;margin:0}
+
+.benefit-section{background:linear-gradient(180deg,#fdf9ee,#fef3d0)}
+.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.benefit{padding:22px;background:#fffdf7;border-radius:4px;border-top:2px solid var(--sun-4)}
+.benefit h3{font-size:15px;margin:0 0 8px;color:var(--navy)}
+.benefit p{font-size:12px;line-height:1.8;color:#7a6647;margin:0}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:35px;border-top:1px solid #f0e2c0;border-left:1px solid #f0e2c0}
+.step{padding:23px;border-right:1px solid #f0e2c0;border-bottom:1px solid #f0e2c0;background:#fffdf7}
+.step b{font-size:11px;letter-spacing:.15em;color:#b87400}
+.step h3{margin:11px 0 8px;font-size:16px;color:var(--navy)}
+.step p{margin:0;color:#7a6647;font-size:12px;line-height:1.7}
+
+.eligibility{
+  background:linear-gradient(120deg,#3d2408,#1a0f00);
+  color:#FFF8E1;border-radius:5px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:34px;
+  border:1px solid rgba(255,200,80,.2);
+}
+.eligibility h3{margin:0 0 8px;font-size:22px;color:#FFF8E1}
+.eligibility p{margin:0;color:#e8d5a8;font-size:13px;line-height:1.7}
+.eligibility strong{color:var(--sun-3)}
+
+.cta{background:linear-gradient(135deg,#fef3d0,#fff8e1);text-align:center}
+.cta .section-intro{margin:0 auto}
+.cta-panel{
+  max-width:800px;margin:35px auto 0;padding:42px 25px;
+  background:
+    radial-gradient(ellipse at 30% 0%, rgba(255,200,80,.25) 0%, transparent 60%),
+    linear-gradient(135deg,#2d1a05,#1a0f00);
+  color:#FFF8E1;position:relative;overflow:hidden;border-radius:5px;border:1px solid rgba(255,200,80,.2);
+}
+.cta-panel:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,200,80,.15);border-radius:50%;right:-100px;top:-130px;box-shadow:0 0 0 35px rgba(255,200,80,.05),0 0 0 75px rgba(255,200,80,.03)}
+.cta-panel>*{position:relative;z-index:1}
+.cta-panel h3{font-size:clamp(28px,4vw,43px);letter-spacing:-.04em;margin:0 0 13px;color:#FFF8E1}
+.cta-panel p{max-width:570px;margin:0 auto 24px;color:#e8d5a8;font-size:13px;line-height:1.8}
+.note{font-size:11px;color:#c9b896;margin-top:16px}
+
+footer{background:#1a0f00;color:#c9b896;padding:26px 0;font-size:11px;border-top:1px solid rgba(255,200,80,.1)}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.foot strong{color:var(--sun-3)}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::marker{display:none}
+.faq-item[open] summary span{transform:rotate(45deg)}
+.faq-item summary span{transition:transform .3s ease}
+.faq-item p{animation:fadeIn .35s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+.dokumentasi-section{background:linear-gradient(180deg,#fdf9ee 0%,#fef3d0 100%)}
+.doc-row{margin:28px 0 38px}
+.doc-row:last-child{margin-bottom:0}
+.doc-row-scroller{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:22px;padding:8px 0 12px;overflow:visible}
+.doc-card{min-width:0;height:100%;display:flex;flex-direction:column;background:#fffdf7;border:1px solid #f0e2c0;border-radius:10px;overflow:hidden;transition:transform .32s cubic-bezier(.2,.75,.25,1),box-shadow .32s ease,border-color .32s ease;cursor:pointer;position:relative;box-shadow:0 5px 18px rgba(184,116,0,.05);-webkit-tap-highlight-color:transparent}
+.doc-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(255,140,0,.15);border-color:var(--sun-3)}
+.doc-card:active{transform:translateY(-2px) scale(.99)}
+.doc-card-wrap{position:relative;overflow:hidden}
+.doc-card-img{width:100%;aspect-ratio:4/3;height:auto;object-fit:cover;display:block;background:linear-gradient(135deg,#3d2408,#FF8C00);transition:transform .55s cubic-bezier(.2,.75,.25,1)}
+.doc-card:hover .doc-card-img{transform:scale(1.06)}
+.doc-card-tag{position:absolute;top:12px;left:12px;background:linear-gradient(135deg,#FFC93C,#FF8C00);color:#1a0f00;font-size:9px;font-weight:900;padding:6px 10px;border-radius:99px;letter-spacing:.08em;text-transform:uppercase;z-index:2}
+.doc-card-count{position:absolute;bottom:12px;right:12px;background:rgba(26,15,0,.75);color:#FFE066;font-size:10px;font-weight:800;padding:5px 10px;border-radius:99px;letter-spacing:.05em;z-index:2;backdrop-filter:blur(6px)}
+.doc-card-body{padding:17px 17px 19px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.doc-card-body h3{font-size:14px;color:var(--navy);margin:0 0 7px;letter-spacing:-.02em}
+.doc-card-body p{font-size:11px;line-height:1.75;color:#7a6647;margin:0;flex:1}
+.doc-card-more{display:inline-flex;align-items:center;gap:6px;margin-top:15px;font-size:10px;font-weight:800;color:#b87400;letter-spacing:.05em}
+.doc-card-more:after{content:"→";transition:.25s}
+.doc-card:hover .doc-card-more:after{transform:translateX(4px)}
+
+.doc-modal{position:fixed;inset:0;z-index:200;background:rgba(26,15,0,0);backdrop-filter:blur(0);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s cubic-bezier(.16,1,.3,1),background .35s cubic-bezier(.16,1,.3,1),backdrop-filter .35s cubic-bezier(.16,1,.3,1),visibility 0s linear .35s}
+.doc-modal.open{opacity:1;visibility:visible;pointer-events:auto;background:rgba(26,15,0,.94);backdrop-filter:blur(10px);transition:opacity .35s cubic-bezier(.16,1,.3,1),background .35s cubic-bezier(.16,1,.3,1),backdrop-filter .35s cubic-bezier(.16,1,.3,1),visibility 0s linear 0s}
+.doc-modal-inner{background:#fffdf7;max-width:1000px;width:100%;border-radius:6px;overflow:hidden;display:grid;grid-template-columns:1.5fr 1fr;max-height:90vh;transform:scale(.92) translateY(20px);opacity:0;transition:transform .45s cubic-bezier(.16,1,.3,1),opacity .35s cubic-bezier(.16,1,.3,1);position:relative;will-change:transform,opacity}
+.doc-modal.open .doc-modal-inner{transform:scale(1) translateY(0);opacity:1}
+.doc-modal-gallery{position:relative;background:#3d2408;display:flex;flex-direction:column}
+.doc-modal-slider{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;flex:1;overscroll-behavior-x:contain}
+.doc-modal-slider::-webkit-scrollbar{display:none}
+.doc-modal-slide{flex:0 0 100%;min-width:0;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;background:#3d2408}
+.doc-modal-slide img{width:100%;height:100%;object-fit:contain;max-height:75vh;display:block}
+.doc-modal-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(255,248,225,.95);color:#1a0f00;font-size:20px;font-weight:800;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.4);z-index:3;transition:.25s;border:0;cursor:pointer}
+.doc-modal-nav:hover{background:var(--sun-3);transform:translateY(-50%) scale(1.08)}
+.doc-modal-nav.prev{left:14px}
+.doc-modal-nav.next{right:14px}
+.doc-modal-nav:disabled{opacity:.25;cursor:not-allowed}
+.doc-modal-counter{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);background:rgba(26,15,0,.75);color:#FFE066;font-size:11px;font-weight:800;padding:7px 14px;border-radius:99px;letter-spacing:.08em;z-index:3}
+.doc-modal-dots{display:flex;gap:6px;justify-content:center;padding:12px 0;background:#3d2408;flex-wrap:wrap}
+.doc-modal-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,200,80,.3);border:0;cursor:pointer;transition:.25s;padding:0}
+.doc-modal-dot:hover{background:rgba(255,200,80,.6)}
+.doc-modal-dot.active{background:var(--sun-3);width:22px;border-radius:99px}
+.doc-modal-info{padding:30px;overflow-y:auto;display:flex;flex-direction:column}
+.doc-modal-tag{display:inline-flex;align-self:flex-start;background:linear-gradient(135deg,#FFF59D,#FFC93C);color:#8a5000;font-size:9px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;padding:7px 11px;border-radius:99px;margin-bottom:14px}
+.doc-modal-info h2{font-size:24px;color:var(--navy);letter-spacing:-.03em;margin:0 0 12px;line-height:1.15}
+.doc-modal-info p{font-size:13px;line-height:1.85;color:#7a6647;margin:0 0 14px}
+.doc-modal-info p:last-of-type{margin-bottom:0}
+.doc-modal-close{position:absolute;top:18px;right:18px;width:42px;height:42px;border-radius:50%;background:#fffdf7;color:#1a0f00;font-size:22px;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.4);z-index:5;transition:.25s;border:0;cursor:pointer}
+.doc-modal-close:hover{background:var(--sun-3);transform:rotate(90deg)}
+
+@media(max-width:1000px){
+  .doc-row-scroller{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+}
+@media(max-width:800px){
+.nav{height:70px}
+.navtoggle{display:grid}
+.navlinks{position:absolute;top:70px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:8px;background:linear-gradient(125deg,#1a0f00,#2d1a05);border-bottom:1px solid rgba(255,200,80,.15);max-height:0;overflow:hidden;transition:max-height .35s ease}
+.navlinks.open{max-height:500px;padding:8px}
+.navlinks button{padding:13px 15px;border-radius:6px;text-align:left}
+.navlinks button.active:after{display:none}
+.navlinks button.active{background:rgba(255,200,80,.12)}
+.hero{min-height:auto}
+.hero-inner{grid-template-columns:1fr;gap:32px;padding:60px 0 60px}
+.hero-card{max-width:520px;transform:none}
+.about-grid{grid-template-columns:1fr;gap:25px}
+.roles-grid,.benefit-grid{grid-template-columns:repeat(2,1fr)}
+.themeband{grid-template-columns:1fr}
+.theme-mark{display:none}
+.steps{grid-template-columns:repeat(2,1fr)}
+.eligibility{align-items:flex-start;flex-direction:column}
+.doc-card{flex:0 0 230px}
+.doc-card-img{height:160px}
+.doc-modal-inner{grid-template-columns:1fr;max-height:92vh}
+.doc-modal-slide img{max-height:45vh}
+.doc-modal-info{padding:22px}
+.doc-modal-info h2{font-size:19px}
+.doc-modal-info p{font-size:12px;line-height:1.75}
+.doc-modal-nav{width:38px;height:38px;font-size:17px}
+}
+@media(max-width:520px){
+.wrap{width:min(100% - 30px,1160px)}
+section{padding:68px 0}
+.brand{font-size:12px}
+.brand small{font-size:9px}
+.crest{width:46px;height:46px}
+.navcta{padding:10px 11px;font-size:10px}
+.hero-inner{padding-top:50px}
+h1{font-size:51px}
+.hero-copy{font-size:13px}
+.hero-card{padding:21px}
+.stats strong{font-size:21px}
+.roles-grid,.benefit-grid,.pillars,.steps{grid-template-columns:1fr}
+.themeband{padding:23px}
+.quote{padding:24px}
+.foot{flex-direction:column;align-items:flex-start}
+.doc-card{flex:0 0 200px}
+.doc-card-img{height:140px}
+.doc-card-body{padding:13px 13px 16px}
+.doc-card-body h3{font-size:13px}
+.doc-card-body p{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.reveal{opacity:1;transform:none;transition:none}
+*{transition:none!important}
+}
+
+.music-float{position:fixed;right:20px;bottom:20px;z-index:1200;display:flex;align-items:center;gap:10px;padding:10px 15px;border:1px solid rgba(255,200,80,.4);border-radius:999px;background:rgba(45,26,5,.9);color:#FFF8E1;box-shadow:0 10px 30px rgba(26,15,0,.3);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-family:inherit;font-size:12px;font-weight:600;line-height:1.2;letter-spacing:.02em;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.music-float:hover{transform:translateY(-2px);background:rgba(61,36,8,.98)}
+.music-float:focus-visible{outline:3px solid var(--sun-3);outline-offset:4px}
+.music-float .music-symbol{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:rgba(255,200,80,.15);color:var(--sun-3);font-size:14px}
+.music-float .music-copy{display:flex;flex-direction:column;gap:3px;text-align:left}
+.music-float .music-title{font-size:11px;letter-spacing:.04em}
+.music-float .music-status{font-size:10px;font-weight:400;color:rgba(255,248,225,.7)}
+@media(max-width:520px){.music-float{right:12px;bottom:12px;padding:8px 11px;gap:8px}.music-float .music-symbol{width:25px;height:25px}}
+
+.share-float{position:fixed;left:20px;bottom:20px;z-index:1200;display:flex;align-items:center;gap:10px;padding:10px 15px;border:1px solid rgba(255,200,80,.5);border-radius:999px;background:rgba(26,15,0,.9);color:var(--sun-3);box-shadow:0 10px 30px rgba(26,15,0,.3);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-family:inherit;font-size:12px;font-weight:600;line-height:1.2;letter-spacing:.02em;cursor:pointer;transition:transform .2s ease,background .2s ease,color .2s ease}
+.share-float:hover{transform:translateY(-2px);background:linear-gradient(135deg,#FFC93C,#FF8C00);color:#1a0f00}
+.share-float:focus-visible{outline:3px solid var(--sun-3);outline-offset:4px}
+.share-float .share-symbol{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:rgba(255,200,80,.16);font-size:14px;font-weight:800}
+.share-float:hover .share-symbol{background:rgba(26,15,0,.15)}
+.share-float .share-copy{display:flex;flex-direction:column;gap:3px;text-align:left}
+.share-float .share-title{font-size:11px;letter-spacing:.04em;font-weight:800}
+.share-float .share-status{font-size:10px;font-weight:400;color:rgba(255,200,80,.7)}
+.share-float:hover .share-status{color:rgba(26,15,0,.75)}
+@media(max-width:520px){.share-float{left:12px;bottom:12px;padding:8px 11px;gap:8px}.share-float .share-symbol{width:25px;height:25px}.share-float .share-status{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <button class="brand" onclick="showView('home')" aria-label="Beranda">
+      <img class="crest" src="logo.png" alt="Logo Paskibra SMAN 1 Batujaya">
+      <span><span>SMAN 1 BATUJAYA</span><small>PENCALONAN KETUA PASKIBRA · 2026/2027</small></span>
+    </button>
+    <nav class="navlinks" id="navlinks">
+      <button data-view="home" class="active" onclick="showView('home')">Beranda</button>
+      <button data-view="gagasan" onclick="showView('gagasan')">Gagasan</button>
+      <button data-view="visi" onclick="showView('visi')">Visi & Misi</button>
+      <button data-view="materi" onclick="showView('materi')">Materi</button>
+      <button data-view="proker" onclick="showView('proker')">Program Kerja</button>
+      <button data-view="langkah" onclick="showView('langkah')">Langkah Kerja</button>
+      <button data-view="dokumentasi" onclick="showView('dokumentasi')">Dokumentasi</button>
+      <button data-view="faq" onclick="showView('faq')">FAQ</button>
+      <button data-view="kontak" onclick="showView('kontak')">Kontak</button>
+    </nav>
+    <button class="navcta" onclick="showView('kontak')">HUBUNGI SAYA ↗</button>
+    <button class="navtoggle" onclick="toggleNav()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="view active" style="padding:0">
+  <div class="hero">
+    <div class="orb"></div>
+    <div class="wrap hero-inner">
+      <div>
+        <div class="eyebrow">Pencalonan Ketua Paskibra · 2026/2027</div>
+        <h1>FARID<span>Solid, Aktif, <em>Berkarakter.</em></span></h1>
+        <p class="hero-copy">Bukan sekadar tentang siapa yang memimpin, tetapi tentang bagaimana kita tumbuh bersama, saling menguatkan, dan menjaga satu barisan tetap solid.</p>
+        <div class="hero-actions">
+          <button class="btn btn-gold" onclick="showView('visi')">JELAJAHI GAGASAN →</button>
+          <button class="btn btn-outline" onclick="showView('proker')">LIHAT PROGRAM KERJA</button>
+          <button class="btn btn-outline" onclick="shareWeb()" style="border-color:var(--sun-3);color:var(--sun-3)">BAGIKAN WEB <span>↗</span></button>
+        </div>
+        <div class="hero-note">SMAN 1 BATUJAYA · SOLIDITAS · REGENERASI · KUALITAS ANGGOTA</div>
+      </div>
+      <aside class="hero-card">
+        <div class="card-label">Komitmen Kepemimpinan</div>
+        <h2>Satu Barisan,<br>Satu Keluarga.</h2>
+        <p>Membangun Paskibra yang solid, aktif, dan berkarakter melalui kepemimpinan yang merangkul dan regenerasi yang berkelanjutan.</p>
+        <div class="mini-line"></div>
+        <div class="stats">
+          <div><strong>9</strong><span>Proker Inti</span></div>
+          <div><strong>6</strong><span>Misi Utama</span></div>
+          <div><strong>8</strong><span>Divisi</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GAGASAN ================= -->
+<section id="gagasan" class="view">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="section-kicker">01 / Arah Kepemimpinan</div>
+      <h2 class="section-title">Memimpin dengan merangkul.</h2>
+      <p class="section-intro">Paskibra yang kuat bukan hanya terlihat saat barisan berdiri tegap, tetapi juga dari cara anggotanya saling menghargai, berkomunikasi, dan mengambil peran.</p>
+    </div>
+    <div class="reveal">
+      <div class="quote"><p>"Satu barisan bukan berarti harus selalu sama, tetapi setiap orang punya ruang untuk bertumbuh dan berarti."</p><small>Gagasan Utama</small></div>
+      <div class="pillars">
+        <article class="pillar"><span class="num">01 — SOLIDITAS</span><h3>Saling Percaya</h3><p>Membangun rasa saling percaya antaranggota sebagai fondasi kekuatan barisan.</p></article>
+        <article class="pillar"><span class="num">02 — DISIPLIN</span><h3>Konsisten</h3><p>Konsisten dalam sikap dan tindakan, baik di latihan maupun di luar latihan.</p></article>
+        <article class="pillar"><span class="num">03 — TERBUKA</span><h3>Mendengar</h3><p>Mendengar aspirasi tanpa merendahkan, menciptakan ruang aman untuk bersuara.</p></article>
+        <article class="pillar"><span class="num">04 — BERTUMBUH</span><h3>Berkembang</h3><p>Belajar dan berkembang bersama, tidak ada yang tertinggal dalam proses.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISI & MISI ================= -->
+<section id="visi" class="view dark">
+  <div class="wrap reveal">
+    <div class="section-kicker">02 / Visi</div>
+    <h2 class="section-title">Tujuan yang ingin diwujudkan.</h2>
+    <p class="section-intro">Membawa Paskibra menjadi organisasi yang solid, aktif, berkarakter, dan terus melahirkan anggota yang berkualitas.</p>
+    <div class="themeband">
+      <div>
+        <h3>Visi Saya</h3>
+        <p>Mewujudkan Paskibra SMAN 1 Batujaya sebagai organisasi yang <strong>solid, aktif, dan berkarakter</strong> melalui kepemimpinan yang merangkul, regenerasi yang berkelanjutan, serta hubungan antaranggota yang harmonis demi terciptanya anggota yang berkualitas dan bertanggung jawab.</p>
+      </div>
+      <div class="theme-mark">✳</div>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:70px">
+    <div class="reveal">
+      <div class="section-kicker">03 / Misi</div>
+      <h2 class="section-title">Langkah kecil,<br>perubahan nyata.</h2>
+      <p class="section-intro">Visi hanya akan berarti jika diterjemahkan menjadi kebiasaan dan tindakan yang bisa dijalankan bersama.</p>
+    </div>
+
+    <div class="pillars reveal" style="grid-template-columns:repeat(3,1fr);margin-top:35px">
+      <article class="pillar" style="background:rgba(255,200,80,.06);border-color:rgba(255,200,80,.2)">
+        <span class="num" style="color:var(--sun-3)">MISI / 01</span>
+        <h3 style="color:#FFF8E1">Komunikasi Lintas Angkatan</h3>
+        <p style="color:#e8d5a8">Membangun hubungan senior dan junior yang sehat, saling menghormati, dan berlandaskan keteladanan.</p>
+      </article>
+
+      <article class="pillar" style="background:rgba(255,200,80,.06);border-color:rgba(255,200,80,.2)">
+        <span class="num" style="color:var(--sun-3)">MISI / 02</span>
+        <h3 style="color:#FFF8E1">Anggota Aktif & Berperan</h3>
+        <p style="color:#e8d5a8">Membuka kesempatan bagi setiap anggota untuk terlibat dalam kegiatan serta mengambil tanggung jawab sesuai kemampuannya.</p>
+      </article>
+
+      <article class="pillar" style="background:rgba(255,200,80,.06);border-color:rgba(255,200,80,.2)">
+        <span class="num" style="color:var(--sun-3)">MISI / 03</span>
+        <h3 style="color:#FFF8E1">Memperkuat Solidaritas</h3>
+        <p style="color:#e8d5a8">Menumbuhkan rasa memiliki, kerja sama, kepedulian, dan kebiasaan saling membantu sebagai satu keluarga Paskibra.</p>
+      </article>
+
+      <article class="pillar" style="background:rgba(255,200,80,.06);border-color:rgba(255,200,80,.2)">
+        <span class="num" style="color:var(--sun-3)">MISI / 04</span>
+        <h3 style="color:#FFF8E1">Regenerasi Berkelanjutan</h3>
+        <p style="color:#e8d5a8">Menyusun pembinaan bertahap agar anggota muda siap melanjutkan tanggung jawab dan kepemimpinan organisasi.</p>
+      </article>
+
+      <article class="pillar" style="background:rgba(255,200,80,.06);border-color:rgba(255,200,80,.2)">
+        <span class="num" style="color:var(--sun-3)">MISI / 05</span>
+        <h3 style="color:#FFF8E1">Ruang Aspirasi Terbuka</h3>
+        <p style="color:#e8d5a8">Menyediakan sarana aspirasi dan evaluasi yang aman, tertib, serta ditindaklanjuti secara bertanggung jawab.</p>
+      </article>
+
+      <article class="pillar" style="background:rgba(255,200,80,.06);border-color:rgba(255,200,80,.2)">
+        <span class="num" style="color:var(--sun-3)">MISI / 06</span>
+        <h3 style="color:#FFF8E1">Disiplin & Kualitas</h3>
+        <p style="color:#e8d5a8">Meningkatkan keterampilan, karakter, dan kedisiplinan melalui latihan, evaluasi, dan contoh nyata dari pengurus.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MATERI PASKIBRA ================= -->
+<section id="materi" class="view" style="background:linear-gradient(180deg,#fdf9ee,#fef3d0)">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">04 / Materi Paskibra</div>
+      <h2 class="section-title">Pengetahuan dasar<br>seorang Paskibra.</h2>
+      <p class="section-intro">Kumpulan materi penting yang harus dipahami setiap anggota Paskibra SMAN 1 Batujaya.</p>
+    </div>
+
+    <div class="roles-grid" style="grid-template-columns:repeat(2,1fr);margin-top:35px">
+      <article class="role reveal">
+        <div class="role-icon">📜</div>
+        <h3>Sejarah Paskibra</h3>
+        <p>Berawal dari 17 Agustus 1946 di Yogyakarta, Mayor Husein Mutahar menyiapkan upacara pengibaran bendera pusaka dengan 5 pemuda (3 putra, 2 putri) simbol Pancasila. Formasi 17-8-45 diciptakan tahun 1967. Nama "Paskibraka" diusulkan Idik Sulaeman tahun 1973.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">🇮🇩</div>
+        <h3>Sejarah Bendera Merah Putih</h3>
+        <p>Akar tradisi dari Kerajaan Kediri (1292 M) dan Majapahit. Dijahit oleh Ibu Fatmawati, dikibarkan pertama kali 17 Agustus 1945 oleh Latief Hendraningrat dan Suhud. Kini disimpan di Monas. Ukuran standar: 1,2 x 1,8 m (lapangan umum), 2 x 3 m (istana).</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">🛡️</div>
+        <h3>Lambang Paskibraka</h3>
+        <p>Bentuk perisai melambangkan bela negara. Garis tepi kuning = kebanggaan. Anggota Paskibra = putra-putri terbaik bangsa. Bendera berkibar = kebesaran Indonesia. Garis horizon bertingkat = tingkatan Nasional, Provinsi, Kabupaten.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">🎖️</div>
+        <h3>Lambang Purna Paskibraka</h3>
+        <p>Bunga teratai = kebangkitan dan kemurnian. Tiga helai daun ke atas = kemauan belajar, bekerja, berbakti. Tiga helai mendatar = aktif, disiplin, gembira. Mata rantai = persaudaraan kokoh tanpa membedakan suku, ras, agama.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">⚔️</div>
+        <h3>3 Sikap Pokok Paskibra</h3>
+        <p><strong>Jiwa Patriotisme</strong> (Ing Ngarso Sung Tulodo): berbudi luhur, hormat bendera. <strong>Jiwa Nasionalisme</strong> (Ing Madya Mangun Karso): hormat peraturan, sikap positif. <strong>Jiwa Militanisme</strong> (Tut Wuri Handayani): berkarya, kebersamaan, kekompakan.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">🏃</div>
+        <h3>3 Sikap TOP Paskibra</h3>
+        <p>Sikap Duduk, Sikap Berdiri, Sikap Berjalan. Ketiga sikap ini merupakan pencerminan sikap siswa yang diterapkan dalam organisasi Paskibra. Sikapmu harus diwujudkan dalam kegiatan, bersikaplah sewajarnya, dan bedakan sikap terhadap pelatih, senior, teman sebaya, dan lingkungan.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">📣</div>
+        <h3>Motto Paskibra</h3>
+        <p>"Disiplin adalah napas ku. Tidak takut kalah, tidak takut salah, tidak takut jatuh, tidak takut mati. Takut mati jangan hidup, takut hidup mati sekalian. Kalau ada 1000, kami ada 1. Kalau ada 100, kami tetap 1. Kalau ada 10, kami yakin 1. Kalau ada 1, ya itulah kami."</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">🤝</div>
+        <h3>Semboyan Paskibra — SATOTEMA</h3>
+        <p><strong>SA</strong> = Salam. <strong>TO</strong> = Tolong. <strong>TE</strong> = Terima kasih. <strong>MA</strong> = Maaf. Semboyan ini mengajarkan anggota Paskibra untuk selalu mengucapkan salam, saling tolong menolong, berterima kasih, dan meminta maaf jika melanggar tata tertib.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">📋</div>
+        <h3>Halentri Paskibra</h3>
+        <p>Tata cara kehidupan Paskibra: di jalan (sapa yang lebih tua, ramah, jangan buang pandangan), bertamu (ketuk pintu, ucapkan salam, jangan duduk sebelum dipersilakan), makan (posisi tegak, sendok kanan garpu kiri, tidak berbicara), berjalan, dan menulis.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">📏</div>
+        <h3>Peraturan & Tata Tertib</h3>
+        <p>Berpakaian rapi, rambut rapi, kuku dipotong. Untuk perempuan dilarang menggunakan make up (kecuali lip balm, moisturizer, skincare). Disiplin dan siap dididik. Berpakaian sesuai informasi, membawa topi, buku, alat tulis. Menjaga sikap terhadap pembina, pelatih, senior, dan teman sebaya.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">🤝</div>
+        <h3>Halentri Bertamu</h3>
+        <p>Ketuk pintu terlebih dahulu dan ucapkan salam. Katakan maksud dan tujuan. Jangan duduk sebelum dipersilakan. Ambil sikap duduk yang baik. Jangan memegang meja. Uraikan maksud dan tujuan. Jangan memalingkan pandangan saat diajak bicara. Jawab dengan tegas, jelas, sopan. Ucapkan salam saat selesai.</p>
+      </article>
+
+      <article class="role reveal">
+        <div class="role-icon">🍽️</div>
+        <h3>Halentri Makan</h3>
+        <p>Waktu makan posisi tubuh tegak. Sendok di tangan kanan, garpu di tangan kiri. Cara memegang garpu dan sendok sama dengan memegang pena. Di waktu sedang makan tidak ada yang berbicara. Sebelum dan sesudah makan selalu membaca doa.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGRAM KERJA ================= -->
+<section id="proker" class="view">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">05 / Program Kerja</div>
+      <h2 class="section-title">Program yang dekat<br>dengan anggota.</h2>
+      <p class="section-intro">Setiap program dirancang agar realistis, terukur, dan bisa dijalankan tanpa mengganggu kegiatan belajar maupun agenda resmi sekolah.</p>
+    </div>
+
+    <!-- PROGRAM KERJA KETUA & WAKIL -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">A / Proker Ketua & Wakil Ketua</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">🏛️</div><h3>Pelantikan</h3><p>Prosesi pelantikan pengurus baru Paskibra SMAN 1 Batujaya.</p></article>
+        <article class="role"><div class="role-icon">👥</div><h3>Seleksi Anggota Capaska</h3><p>Seleksi calon pasukan Paskibra untuk anggota baru.</p></article>
+        <article class="role"><div class="role-icon">🎓</div><h3>Pelatihan Kecakapan Senior</h3><p>Pelatihan untuk meningkatkan kemampuan senior dalam membimbing anggota.</p></article>
+        <article class="role"><div class="role-icon">🤝</div><h3>Latgab (Latihan Gabungan)</h3><p>Latihan bersama seluruh anggota untuk memperkuat kekompakan.</p></article>
+        <article class="role"><div class="role-icon">🌙</div><h3>Bukber (Buka Puasa Bersama)</h3><p>Kegiatan buka puasa bersama untuk mempererat kekeluargaan.</p></article>
+        <article class="role"><div class="role-icon">🗳️</div><h3>Musyawarah Satuan</h3><p>Pemilihan ketua Paskibra periode berikutnya.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA LOGISTIK -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">B / Proker Logistik</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">📦</div><h3>Beberes Rupas/Atribut</h3><p>Pengecekan dan perapian atribut serta ruang Paskibra. Dilakukan 1 bulan 2 kali.</p></article>
+        <article class="role"><div class="role-icon">📋</div><h3>Mendata Atribut & Barang</h3><p>Pendataan seluruh atribut dan barang-barang Paskibra lainnya.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA BINLAT LAPANG -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">C / Proker Binlat Lapang</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">🎯</div><h3>Pelatihan Upacara</h3><p>Latihan tata cara upacara bendera yang benar dan khidmat.</p></article>
+        <article class="role"><div class="role-icon">📏</div><h3>Latihan PBB</h3><p>Latihan Peraturan Baris-Berbaris untuk kedisiplinan dan kekompakan.</p></article>
+        <article class="role"><div class="role-icon">🇮🇩</div><h3>Latihan Pengibaran</h3><p>Latihan khusus pengibaran dan penurunan bendera Merah Putih.</p></article>
+        <article class="role"><div class="role-icon">🤝</div><h3>Membantu Proker Ketua/Wakil</h3><p>Mendukung pelaksanaan program kerja ketua dan wakil ketua.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA BINLAT MATERI -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">D / Proker Binlat Materi</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">📚</div><h3>Menjelaskan Materi PBB</h3><p>Penyampaian materi Peraturan Baris-Berbaris kepada anggota.</p></article>
+        <article class="role"><div class="role-icon">📜</div><h3>Menjelaskan Peraturan Paskibra</h3><p>Penyampaian peraturan, tata tertib, dan adat istiadat Paskibra.</p></article>
+        <article class="role"><div class="role-icon">🧠</div><h3>Fun Quiz Paskibra</h3><p>Kuis interaktif seputar pengetahuan Paskibra untuk memperkuat pemahaman.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA BULU DAN PALU -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">E / Proker Bulu dan Palu</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">📢</div><h3>Mengenalkan Ekstrakurikuler</h3><p>Mengenalkan Paskibra ke seluruh penjuru melalui lomba atau postingan media sosial yang menyatu dengan Paskibra.</p></article>
+        <article class="role"><div class="role-icon">🎉</div><h3>Perayaan Hari Kemerdekaan</h3><p>Pengibaran bendera dan mengadakan perlombaan agustusan.</p></article>
+        <article class="role"><div class="role-icon">🎮</div><h3>Fun Game</h3><p>Diadakan dalam sebulan sekali saat ada waktu luang untuk mempererat kebersamaan.</p></article>
+        <article class="role"><div class="role-icon">💪</div><h3>Pelatihan Fisik & Mental</h3><p>Pemanasan, latihan disiplin waktu dan tanggung jawab, serta belajar berani berbicara di banyak orang.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA PROTOKOLER -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">F / Proker Protokoler</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">📢</div><h3>Menginformasikan Kumpulan</h3><p>Menginformasikan semua jadwal kumpulan termasuk latihan rutin kepada seluruh anggota.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA SEKRETARIS -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">G / Proker Sekretaris</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">📝</div><h3>Mengabsen Kehadiran</h3><p>Mendata kehadiran anggota dalam setiap kegiatan.</p></article>
+        <article class="role"><div class="role-icon">🎨</div><h3>Membuat Poster/Proposal</h3><p>Membuat desain poster dan proposal kegiatan Paskibra.</p></article>
+        <article class="role"><div class="role-icon">📊</div><h3>Mendata Jumlah Anggota</h3><p>Mendata jumlah anggota Paskibra secara berkala.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA BENDAHARA -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">H / Proker Bendahara</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">💰</div><h3>Pengelolaan Keuangan</h3><p>Mengelola keuangan organisasi dengan transparan dan bertanggung jawab.</p></article>
+        <article class="role"><div class="role-icon">📈</div><h3>Penggalangan Dana</h3><p>Menggalang dana untuk mendukung kegiatan Paskibra.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA PASPRAMPAS -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">I / Proker Pasprampas</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">⚖️</div><h3>Menegakkan Kedisiplinan</h3><p>Menegakkan aturan dan kedisiplinan anggota Paskibra.</p></article>
+        <article class="role"><div class="role-icon">📏</div><h3>Menerapkan Ketertiban</h3><p>Menerapkan ketertiban dalam setiap kegiatan.</p></article>
+        <article class="role"><div class="role-icon">🛡️</div><h3>Memantau Keamanan</h3><p>Memantau keamanan selama kegiatan berlangsung.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA KESPAS -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">J / Proker Kespas</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">🩹</div><h3>Menyiapkan P3K</h3><p>Menyiapkan perlengkapan P3K saat latihan rutin.</p></article>
+        <article class="role"><div class="role-icon">💊</div><h3>Menangani Cedera</h3><p>Menangani anggota yang sakit atau cedera saat latihan.</p></article>
+      </div>
+    </div>
+
+    <!-- PROGRAM KERJA HUMAS -->
+    <div class="reveal" style="margin-top:40px">
+      <div class="section-kicker" style="color:#b87400">K / Proker Humas</div>
+      <div class="roles-grid" style="margin-top:20px">
+        <article class="role"><div class="role-icon">😊</div><h3>KSS (Kultur Senyum, Santun)</h3><p>Membudayakan senyum dan kesantunan dalam setiap interaksi.</p></article>
+        <article class="role"><div class="role-icon">📱</div><h3>Peningkatan Visibilitas Media Sosial</h3><p>Meningkatkan eksistensi Paskibra di media sosial.</p></article>
+      </div>
+    </div>
+
+    <!-- MANFAAT -->
+    <div class="reveal" style="margin-top:50px">
+      <div class="themeband">
+        <div>
+          <h3>Manfaat Program Kerja</h3>
+          <p>Meningkatkan keterampilan anggota dan disiplin. Meningkatkan kerja sama dan kekompakan anggota. Menumbuhkan rasa tanggung jawab dan kepemimpinan. Memperkuat solidaritas seluruh anggota Paskibra.</p>
+        </div>
+        <div class="theme-mark">✳</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= LANGKAH KERJA ================= -->
+<section id="langkah" class="view benefit-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">06 / Rencana Pelaksanaan</div>
+      <h2 class="section-title">Terarah, bertahap,<br>berkelanjutan.</h2>
+      <p class="section-intro">Pelaksanaan disesuaikan dengan kalender sekolah, arahan pembina, dan hasil musyawarah anggota.</p>
+    </div>
+
+    <div class="steps" style="grid-template-columns:repeat(3,1fr);margin-top:35px">
+      <article class="step reveal">
+        <b>TAHAP 01 · DENGAR</b>
+        <h3>Dengar & Petakan</h3>
+        <p>Mengumpulkan aspirasi anggota, mengidentifikasi kebutuhan, dan menyepakati prioritas bersama pembina serta pengurus.</p>
+      </article>
+
+      <article class="step reveal">
+        <b>TAHAP 02 · JALANKAN</b>
+        <h3>Jalankan & Dampingi</h3>
+        <p>Memulai program dari kegiatan sederhana, membagi tanggung jawab, dan memastikan semua anggota memahami perannya.</p>
+      </article>
+
+      <article class="step reveal">
+        <b>TAHAP 03 · EVALUASI</b>
+        <h3>Evaluasi & Perbaiki</h3>
+        <p>Meninjau hasil secara berkala, menerima masukan, dan memperbaiki program berdasarkan kebutuhan nyata.</p>
+      </article>
+    </div>
+
+    <div class="eligibility reveal">
+      <div>
+        <h3>Karena pemimpin bukan yang berjalan paling depan saja.</h3>
+        <p>Pemimpin adalah yang memastikan <strong>tidak ada anggota tertinggal</strong>. Saya siap belajar, mendengar, dan bertanggung jawab bersama seluruh keluarga besar Paskibra SMAN 1 Batujaya.</p>
+      </div>
+      <button class="btn btn-gold" onclick="showView('kontak')">HUBUNGI SAYA →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOKUMENTASI ================= -->
+<section id="dokumentasi" class="view dokumentasi-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">07 / Jejak Paskibra</div>
+      <h2 class="section-title">Dokumentasi</h2>
+      <p class="section-intro">Momen-momen terbaik dari perjalanan Paskibra SMAN 1 Batujaya. Klik salah satu kartu untuk melihat seluruh foto di dalamnya.</p>
+    </div>
+
+    <div class="doc-row reveal">
+      <div class="doc-row-scroller">
+
+        <article class="doc-card" onclick="openDoc(0)">
+          <div class="doc-card-wrap">
+            <span class="doc-card-tag">Latihan</span>
+            <span class="doc-card-count">4 Foto</span>
+            <img class="doc-card-img" src="latihan-1.jpg" alt="Latihan rutin Paskibra">
+          </div>
+          <div class="doc-card-body">
+            <h3>Latihan Rutin</h3>
+            <p>Momen latihan rutin yang membentuk kedisiplinan, kekompakan, dan ketahanan fisik anggota.</p>
+            <span class="doc-card-more">Lihat detail</span>
+          </div>
+        </article>
+
+        <article class="doc-card" onclick="openDoc(1)">
+          <div class="doc-card-wrap">
+            <span class="doc-card-tag">Upacara</span>
+            <span class="doc-card-count">3 Foto</span>
+            <img class="doc-card-img" src="upacara-1.jpg" alt="Upacara bendera">
+          </div>
+          <div class="doc-card-body">
+            <h3>Upacara Bendera</h3>
+            <p>Penampilan Paskibra saat upacara bendera, momen membanggakan bagi seluruh anggota.</p>
+            <span class="doc-card-more">Lihat detail</span>
+          </div>
+        </article>
+
+        <article class="doc-card" onclick="openDoc(2)">
+          <div class="doc-card-wrap">
+            <span class="doc-card-tag">Lomba</span>
+            <span class="doc-card-count">5 Foto</span>
+            <img class="doc-card-img" src="lomba-1.jpg" alt="Lomba PBB">
+          </div>
+          <div class="doc-card-body">
+            <h3>Lomba PBB</h3>
+            <p>Partisipasi Paskibra dalam lomba baris-berbaris tingkat sekolah maupun daerah.</p>
+            <span class="doc-card-more">Lihat detail</span>
+          </div>
+        </article>
+
+        <article class="doc-card" onclick="openDoc(3)">
+          <div class="doc-card-wrap">
+            <span class="doc-card-tag">Kebersamaan</span>
+            <span class="doc-card-count">4 Foto</span>
+            <img class="doc-card-img" src="kebersamaan-1.jpg" alt="Kebersamaan anggota">
+          </div>
+          <div class="doc-card-body">
+            <h3>Kebersamaan</h3>
+            <p>Momen kebersamaan anggota di luar latihan yang memperkuat kekeluargaan.</p>
+            <span class="doc-card-more">Lihat detail</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="doc-row reveal">
+      <div class="doc-row-scroller">
+
+        <article class="doc-card" onclick="openDoc(4)">
+          <div class="doc-card-wrap">
+            <span class="doc-card-tag">Diklat</span>
+            <span class="doc-card-count">3 Foto</span>
+            <img class="doc-card-img" src="diklat-1.jpg" alt="Diklat anggota baru">
+          </div>
+          <div class="doc-card-body">
+            <h3>Diklat Anggota Baru</h3>
+            <p>Pendidikan dan latihan dasar bagi anggota baru untuk mengenal budaya Paskibra.</p>
+            <span class="doc-card-more">Lihat detail</span>
+          </div>
+        </article>
+
+        <article class="doc-card" onclick="openDoc(5)">
+          <div class="doc-card-wrap">
+            <span class="doc-card-tag">HUT RI</span>
+            <span class="doc-card-count">4 Foto</span>
+            <img class="doc-card-img" src="hutri-1.jpg" alt="Peringatan HUT RI">
+          </div>
+          <div class="doc-card-body">
+            <h3>HUT RI</h3>
+            <p>Persiapan dan pelaksanaan pasukan pengibar bendera pada peringatan HUT RI.</p>
+            <span class="doc-card-more">Lihat detail</span>
+          </div>
+        </article>
+
+        <article class="doc-card" onclick="openDoc(6)">
+          <div class="doc-card-wrap">
+            <span class="doc-card-tag">Formasi</span>
+            <span class="doc-card-count">2 Foto</span>
+            <img class="doc-card-img" src="formasi-1.jpg" alt="Variasi formasi">
+          </div>
+          <div class="doc-card-body">
+            <h3>Variasi Formasi</h3>
+            <p>Latihan variasi formasi yang menuntut kekompakan dan ketelitian tinggi.</p>
+            <span class="doc-card-more">Lihat detail</span>
+          </div>
+        </article>
+
+        <article class="doc-card" onclick="openDoc(7)">
+          <div class="doc-card-wrap">
+            <span class="doc-card-tag">Penghargaan</span>
+            <span class="doc-card-count">3 Foto</span>
+            <img class="doc-card-img" src="penghargaan-1.jpg" alt="Penghargaan Paskibra">
+          </div>
+          <div class="doc-card-body">
+            <h3>Penghargaan</h3>
+            <p>Momen penerimaan penghargaan atas dedikasi dan prestasi Paskibra.</p>
+            <span class="doc-card-more">Lihat detail</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL / LIGHTBOX DOKUMENTASI -->
+<div class="doc-modal" id="docModal" onclick="if(event.target===this)closeDoc()">
+  <button class="doc-modal-close" onclick="closeDoc()" aria-label="Tutup">×</button>
+  <div class="doc-modal-inner">
+    <div class="doc-modal-gallery">
+      <div class="doc-modal-slider" id="docModalSlider"></div>
+      <button class="doc-modal-nav prev" onclick="navDoc(-1)" aria-label="Sebelumnya">‹</button>
+      <button class="doc-modal-nav next" onclick="navDoc(1)" aria-label="Berikutnya">›</button>
+      <div class="doc-modal-counter" id="docModalCounter">1 / 1</div>
+      <div class="doc-modal-dots" id="docModalDots"></div>
+    </div>
+    <div class="doc-modal-info">
+      <span class="doc-modal-tag" id="docModalTag"></span>
+      <h2 id="docModalTitle"></h2>
+      <p id="docModalDesc"></p>
+      <p id="docModalExtra"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="view">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">08 / Pertanyaan Umum</div>
+      <h2 class="section-title">Masih ragu?<br>Ini jawabannya.</h2>
+      <p class="section-intro">Beberapa pertanyaan yang paling sering ditanyakan tentang pencalonan saya sebagai Ketua Paskibra.</p>
+    </div>
+
+    <div class="faq-list reveal" style="max-width:820px;margin-top:35px">
+      <details class="faq-item" style="border-bottom:1px solid #f0e2c0;padding:20px 0">
+        <summary style="font-weight:800;color:var(--navy);font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:15px">
+          Apa alasan saya mencalonkan diri sebagai Ketua Paskibra?
+          <span style="color:var(--sun-4);font-size:20px;transition:.3s">+</span>
+        </summary>
+        <p style="margin:15px 0 0;font-size:13px;line-height:1.85;color:#7a6647">Saya ingin membangun Paskibra yang lebih solid, aktif, dan berkarakter. Bukan hanya dari segi penampilan, tetapi juga dari cara anggota saling menghargai, berkomunikasi, dan mengambil peran.</p>
+      </details>
+
+      <details class="faq-item" style="border-bottom:1px solid #f0e2c0;padding:20px 0">
+        <summary style="font-weight:800;color:var(--navy);font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:15px">
+          Apa yang membedakan saya dengan calon lain?
+          <span style="color:var(--sun-4);font-size:20px">+</span>
+        </summary>
+        <p style="margin:15px 0 0;font-size:13px;line-height:1.85;color:#7a6647">Saya menekankan <strong>kepemimpinan yang merangkul</strong> — bukan hanya memimpin dari depan, tetapi memastikan tidak ada anggota yang tertinggal. Fokus saya pada soliditas, regenerasi, dan kualitas anggota.</p>
+      </details>
+
+      <details class="faq-item" style="border-bottom:1px solid #f0e2c0;padding:20px 0">
+        <summary style="font-weight:800;color:var(--navy);font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:15px">
+          Bagaimana cara saya menjaga komunikasi lintas angkatan?
+          <span style="color:var(--sun-4);font-size:20px">+</span>
+        </summary>
+        <p style="margin:15px 0 0;font-size:13px;line-height:1.85;color:#7a6647">Melalui program <strong>"Satu Barisan, Satu Keluarga"</strong> — pendampingan anggota baru oleh senior, diskusi ringan berkala, dan budaya saling menghormati tanpa merendahkan.</p>
+      </details>
+
+      <details class="faq-item" style="border-bottom:1px solid #f0e2c0;padding:20px 0">
+        <summary style="font-weight:800;color:var(--navy);font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:15px">
+          Apa itu program "Ruang Aspirasi"?
+          <span style="color:var(--sun-4);font-size:20px">+</span>
+        </summary>
+        <p style="margin:15px 0 0;font-size:13px;line-height:1.85;color:#7a6647">Ruang Aspirasi adalah wadah digital untuk menyampaikan saran, kendala, dan ide — dengan pilihan identitas bernama atau anonim. Ketua meninjau dan memperbarui status tindak lanjut, memastikan setiap masukan direspons.</p>
+      </details>
+
+      <details class="faq-item" style="border-bottom:1px solid #f0e2c0;padding:20px 0">
+        <summary style="font-weight:800;color:var(--navy);font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:15px">
+          Bagaimana saya memastikan regenerasi berkelanjutan?
+          <span style="color:var(--sun-4);font-size:20px">+</span>
+        </summary>
+        <p style="margin:15px 0 0;font-size:13px;line-height:1.85;color:#7a6647">Melalui program <strong>"Kader Muda Paskibra"</strong> — pembinaan bertahap, latihan dasar organisasi dan komunikasi, serta kesempatan menjadi koordinator kegiatan kecil agar anggota muda siap memimpin.</p>
+      </details>
+
+      <details class="faq-item" style="border-bottom:1px solid #f0e2c0;padding:20px 0">
+        <summary style="font-weight:800;color:var(--navy);font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:15px">
+          Kapan pemilihan Ketua Paskibra dilaksanakan?
+          <span style="color:var(--sun-4);font-size:20px">+</span>
+        </summary>
+        <p style="margin:15px 0 0;font-size:13px;line-height:1.85;color:#7a6647">Pemilihan dijadwalkan pada <strong>minggu kedua Desember 2026</strong>. Tanggal pasti akan dikonfirmasi oleh pembina dan pengurus Paskibra.</p>
+      </details>
+    </div>
+
+    <div style="margin-top:35px;text-align:center">
+      <p style="font-size:13px;color:#7a6647;margin:0 0 15px">Masih ada pertanyaan lain? Hubungi saya langsung.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-gold" href="https://wa.me/6285894143129" target="_blank" rel="noopener noreferrer">WA SAYA ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAK ================= -->
+<section id="kontak" class="view dark">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">09 / Hubungi Saya</div>
+      <h2 class="section-title">Ada pertanyaan?<br>Saya siap membantu.</h2>
+      <p class="section-intro">Jangan ragu untuk menghubungi saya jika ada hal yang perlu ditanyakan seputar visi, misi, program kerja, atau komitmen kepemimpinan.</p>
+    </div>
+
+    <div class="roles-grid reveal" style="grid-template-columns:1fr;max-width:520px;margin-top:35px">
+      <article class="role" style="background:rgba(255,200,80,.06);border-color:rgba(255,200,80,.2)">
+        <div class="role-icon" style="background:rgba(255,200,80,.15);color:var(--sun-3)">📱</div>
+        <h3 style="color:#FFF8E1">WhatsApp</h3>
+        <p style="color:#e8d5a8">0858-9414-3129</p>
+        <a class="btn btn-gold" style="margin-top:15px;padding:10px 16px;font-size:11px" href="https://wa.me/6285894143129" target="_blank" rel="noopener noreferrer">CHAT VIA WHATSAPP ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span><strong>SAYA</strong> · Calon Ketua Paskibra SMAN 1 Batujaya 2026/2027</span>
+    <span>Dibuat untuk menginspirasi partisipasi dan kontribusi positif.</span>
+  </div>
+</footer>
+
+<script>
+function showView(id){
+  document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
+  const target=document.getElementById(id);
+  if(target) target.classList.add("active");
+  document.querySelectorAll(".navlinks button").forEach(b=>{
+    b.classList.toggle("active",b.dataset.view===id);
+  });
+  document.getElementById("navlinks")?.classList.remove("open");
+  window.scrollTo({top:0,behavior:"smooth"});
+  setTimeout(runReveal,60);
+}
+function toggleNav(){
+  document.getElementById("navlinks")?.classList.toggle("open");
+}
+function runReveal(){
+  const active=document.querySelector(".view.active");
+  if(!active) return;
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add("visible");
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:.12});
+  active.querySelectorAll(".reveal").forEach(el=>{
+    el.classList.remove("visible");
+    obs.observe(el);
+  });
+}
+window.addEventListener("load",runReveal);
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape") document.getElementById("navlinks")?.classList.remove("open");
+});
+
+/* ================= DOKUMENTASI ================= */
+const docData=[
+  {
+    tag:"Latihan",
+    title:"Latihan Rutin Paskibra",
+    desc:"Latihan rutin menjadi fondasi utama Paskibra. Di sini, kedisiplinan, kekompakan, dan ketahanan fisik dibentuk melalui proses yang konsisten dan terstruktur.",
+    extra:"Setiap anggota dilatih untuk disiplin, tepat waktu, dan saling mendukung. Latihan rutin bukan hanya soal fisik, tetapi juga soal mental dan karakter.",
+    photos:["latihan-1.jpg","latihan-2.jpg","latihan-3.jpg","latihan-4.jpg"]
+  },
+  {
+    tag:"Upacara",
+    title:"Upacara Bendera",
+    desc:"Penampilan Paskibra saat upacara bendera adalah momen yang paling dinanti. Di sini, seluruh latihan dan persiapan diuji di hadapan seluruh warga sekolah.",
+    extra:"Momen ini menjadi kebanggaan tersendiri bagi setiap anggota Paskibra, karena mereka dipercaya mengemban tugas mulia mengibarkan bendera Merah Putih.",
+    photos:["upacara-1.jpg","upacara-2.jpg","upacara-3.jpg"]
+  },
+  {
+    tag:"Lomba",
+    title:"Lomba PBB",
+    desc:"Partisipasi Paskibra dalam lomba baris-berbaris menjadi ajang untuk menguji kemampuan, kekompakan, dan mental anggota.",
+    extra:"Bukan hanya soal menang atau kalah, tetapi tentang pengalaman, pembelajaran, dan kebanggaan telah mewakili sekolah.",
+    photos:["lomba-1.jpg","lomba-2.jpg","lomba-3.jpg","lomba-4.jpg","lomba-5.jpg"]
+  },
+  {
+    tag:"Kebersamaan",
+    title:"Kebersamaan Anggota",
+    desc:"Momen kebersamaan di luar latihan menjadi perekat kekeluargaan Paskibra. Di sini, senior dan junior saling mengenal lebih dekat.",
+    extra:"Kebersamaan bukan hanya soal berkumpul, tetapi tentang saling mendukung, berbagi cerita, dan tumbuh bersama.",
+    photos:["kebersamaan-1.jpg","kebersamaan-2.jpg","kebersamaan-3.jpg","kebersamaan-4.jpg"]
+  },
+  {
+    tag:"Diklat",
+    title:"Diklat Anggota Baru",
+    desc:"Pendidikan dan latihan dasar bagi anggota baru menjadi gerbang pertama mengenal budaya Paskibra.",
+    extra:"Di sini, anggota baru belajar tentang disiplin, kekompakan, dan nilai-nilai yang harus dijunjung tinggi sebagai anggota Paskibra.",
+    photos:["diklat-1.jpg","diklat-2.jpg","diklat-3.jpg"]
+  },
+  {
+    tag:"HUT RI",
+    title:"Peringatan HUT RI",
+    desc:"Persiapan dan pelaksanaan pasukan pengibar bendera pada peringatan HUT RI menjadi momen paling bersejarah bagi Paskibra.",
+    extra:"Latihan berbulan-bulan diuji dalam satu momen sakral. Ini adalah puncak dari dedikasi dan kerja keras seluruh anggota.",
+    photos:["hutri-1.jpg","hutri-2.jpg","hutri-3.jpg","hutri-4.jpg"]
+  },
+  {
+    tag:"Formasi",
+    title:"Variasi Formasi",
+    desc:"Latihan variasi formasi menuntut kekompakan dan ketelitian tinggi. Setiap gerakan harus serempak dan tepat.",
+    extra:"Variasi formasi bukan hanya soal keindahan, tetapi juga tentang kerja sama dan saling percaya antaranggota.",
+    photos:["formasi-1.jpg","formasi-2.jpg"]
+  },
+  {
+    tag:"Penghargaan",
+    title:"Penghargaan Paskibra",
+    desc:"Momen penerimaan penghargaan atas dedikasi dan prestasi Paskibra menjadi bukti bahwa kerja keras tidak pernah sia-sia.",
+    extra:"Penghargaan ini bukan hanya milik individu, tetapi milik seluruh anggota yang telah berjuang bersama.",
+    photos:["penghargaan-1.jpg","penghargaan-2.jpg","penghargaan-3.jpg"]
+  }
+];
+
+let currentDocIndex=0;
+let currentPhotoIndex=0;
+let currentPhotos=[];
+
+function openDoc(i){
+  if(!docData[i]) return;
+  currentDocIndex=i;
+  currentPhotos=docData[i].photos || [];
+  currentPhotoIndex=0;
+
+  loadDocInfo(i);
+  buildSlider();
+  updateCounter();
+  updateDots();
+  updateNavButtons();
+
+  document.getElementById("docModal").classList.add("open");
+  document.body.style.overflow="hidden";
+}
+
+function loadDocInfo(i){
+  const d=docData[i];
+  if(!d) return;
+  document.getElementById("docModalTag").textContent=d.tag;
+  document.getElementById("docModalTitle").textContent=d.title;
+  document.getElementById("docModalDesc").textContent=d.desc;
+  document.getElementById("docModalExtra").textContent=d.extra;
+}
+
+function buildSlider(){
+  const slider=document.getElementById("docModalSlider");
+  const dots=document.getElementById("docModalDots");
+  slider.innerHTML="";
+  dots.innerHTML="";
+
+  currentPhotos.forEach((src,idx)=>{
+    const slide=document.createElement("div");
+    slide.className="doc-modal-slide";
+    const img=document.createElement("img");
+    img.src=src;
+    img.alt=docData[currentDocIndex].title+" foto "+(idx+1);
+    slide.appendChild(img);
+    slider.appendChild(slide);
+
+    const dot=document.createElement("button");
+    dot.className="doc-modal-dot";
+    dot.setAttribute("aria-label","Foto "+(idx+1));
+    dot.onclick=(e)=>{e.stopPropagation();goToPhoto(idx);};
+    dots.appendChild(dot);
+  });
+
+  slider.scrollLeft=0;
+
+  slider.onscroll=()=>{
+    const idx=Math.round(slider.scrollLeft/slider.clientWidth);
+    if(idx!==currentPhotoIndex){
+      currentPhotoIndex=idx;
+      updateCounter();
+      updateDots();
+      updateNavButtons();
+    }
+  };
+}
+
+function goToPhoto(i){
+  const slider=document.getElementById("docModalSlider");
+  const slide=slider.children[i];
+  if(!slide) return;
+  slider.scrollTo({left:slide.offsetLeft-slider.offsetLeft,behavior:"smooth"});
+  currentPhotoIndex=i;
+  updateCounter();
+  updateDots();
+  updateNavButtons();
+}
+
+function navDoc(dir){
+  const next=currentPhotoIndex+dir;
+  if(next<0||next>=currentPhotos.length) return;
+  goToPhoto(next);
+}
+
+function updateCounter(){
+  document.getElementById("docModalCounter").textContent=(currentPhotoIndex+1)+" / "+currentPhotos.length;
+}
+
+function updateDots(){
+  const dots=document.querySelectorAll(".doc-modal-dot");
+  dots.forEach((d,idx)=>d.classList.toggle("active",idx===currentPhotoIndex));
+}
+
+function updateNavButtons(){
+  const prev=document.querySelector(".doc-modal-nav.prev");
+  const next=document.querySelector(".doc-modal-nav.next");
+  if(prev) prev.disabled=currentPhotoIndex===0;
+  if(next) next.disabled=currentPhotoIndex===currentPhotos.length-1;
+  const hide=currentPhotos.length<=1;
+  document.querySelectorAll(".doc-modal-nav").forEach(b=>b.style.display=hide?"none":"grid");
+  const dots=document.getElementById("docModalDots");
+  if(dots) dots.style.display=hide?"none":"flex";
+}
+
+function closeDoc(){
+  document.getElementById("docModal").classList.remove("open");
+  document.body.style.overflow="";
+}
+
+document.addEventListener("keydown",e=>{
+  if(!document.getElementById("docModal").classList.contains("open")) return;
+  if(e.key==="Escape") closeDoc();
+  if(e.key==="ArrowLeft") navDoc(-1);
+  if(e.key==="ArrowRight") navDoc(1);
+});
+
+/* ================= SHARE WEB ================= */
+async function shareWeb(){
+  const shareData = {
+    title: "FARID — Calon Ketua Paskibra SMAN 1 Batujaya",
+    text: "Soliditas, Regenerasi, Kualitas Anggota. Satu barisan, satu keluarga. Dukung saya sebagai Ketua Paskibra SMAN 1 Batujaya 2026/2027!",
+    url: window.location.href
+  };
+
+  if (navigator.share) {
+    try {
+      await navigator.share(shareData);
+      return;
+    } catch (err) {
+      if (err.name === "AbortError") return;
+    }
+  }
+
+  try {
+    await navigator.clipboard.writeText(shareData.url);
+    showShareToast("✅ Link berhasil disalin! Bagikan ke temanmu ya.");
+  } catch (err) {
+    showShareToast("📋 Salin link di bawah ini:");
+    window.prompt("Salin link ini:", shareData.url);
+  }
+}
+
+function showShareToast(message){
+  const toast = document.createElement("div");
+  toast.textContent = message;
+  toast.style.cssText = `
+    position: fixed;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%) translateY(20px);
+    background: #2d1a05;
+    color: #FFF8E1;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 12px 35px rgba(26,15,0,.35);
+    border: 1px solid rgba(255,200,80,.3);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity .3s ease, transform .3s ease;
+    pointer-events: none;
+    max-width: 90vw;
+    text-align: center;
+  `;
+  document.body.appendChild(toast);
+  requestAnimationFrame(()=>{
+    toast.style.opacity = "1";
+    toast.style.transform = "translateX(-50%) translateY(0)";
+  });
+  setTimeout(()=>{
+    toast.style.opacity = "0";
+    toast.style.transform = "translateX(-50%) translateY(20px)";
+    setTimeout(()=>toast.remove(), 350);
+  }, 2800);
+}
+</script>
+
+<audio id="siteBackgroundMusic" src="musik.mp3" loop preload="auto"></audio>
+<button class="music-float" id="musicToggle" type="button" aria-label="Nyalakan musik" aria-pressed="false">
+  <span class="music-symbol" id="musicSymbol" aria-hidden="true">♫</span>
+  <span class="music-copy"><span class="music-title">MUSIK LATAR</span><span class="music-status" id="musicStatus">Ketuk untuk menyalakan</span></span>
+</button>
+
+<button class="share-float" id="shareToggle" type="button" aria-label="Bagikan web ini" onclick="shareWeb()">
+  <span class="share-symbol" aria-hidden="true">↗</span>
+  <span class="share-copy"><span class="share-title">BAGIKAN</span><span class="share-status">Web ini ke temanmu</span></span>
+</button>
+
+<script>
+(function(){
+  const audio=document.getElementById('siteBackgroundMusic');
+  const button=document.getElementById('musicToggle');
+  const status=document.getElementById('musicStatus');
+  const symbol=document.getElementById('musicSymbol');
+  if(!audio||!button||!status||!symbol) return;
+  audio.volume=0.35;
+  function renderMusicState(playing){
+    button.setAttribute('aria-pressed',String(playing));
+    button.setAttribute('aria-label',playing?'Matikan musik':'Nyalakan musik');
+    status.textContent=playing?'Sedang diputar':'Ketuk untuk menyalakan';
+    symbol.textContent=playing?'Ⅱ':'♫';
+  }
+  button.addEventListener('click',async function(){
+    if(!audio.paused){audio.pause();renderMusicState(false);return;}
+    try{await audio.play();renderMusicState(true);}
+    catch(error){renderMusicState(false);status.textContent='File musik.mp3 belum tersedia';}
+  });
+  audio.addEventListener('play',()=>renderMusicState(true));
+  audio.addEventListener('pause',()=>renderMusicState(false));
+  audio.addEventListener('error',()=>{renderMusicState(false);status.textContent='Periksa file musik.mp3';});
+  window.addEventListener('load',async function(){
+    try{await audio.play();renderMusicState(true);}
+    catch(error){renderMusicState(false);}
+  },{once:true});
+})();
+</script>
+
+</body>
+</html>
