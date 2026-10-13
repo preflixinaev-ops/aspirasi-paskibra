@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b2118">
+<title>Ruang Aspirasi | Paskibra SMAN 1 Batujaya</title>
+<style>
+:root{--bg:#07150f;--panel:#0e241a;--panel2:#122d20;--line:#244735;--text:#edf7ef;--muted:#a7c1ae;--green:#8ee0a4;--green2:#2c8d53;--red:#ffb4a8;--amber:#ffe09a;--shadow:0 20px 55px #0005}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#153b29 0,transparent 42%),var(--bg);color:var(--text);font:15px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:var(--green)}
+.wrap{width:min(1100px,calc(100% - 28px));margin:auto;padding:28px 0 50px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:24px}.brand{display:flex;gap:12px;align-items:center}.logo{width:46px;height:46px;display:grid;place-items:center;border:1px solid #3b7550;border-radius:14px;background:linear-gradient(145deg,#204c32,#0d2116);color:var(--green);font-size:23px;font-weight:900}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);font-weight:800}.brand h1{font-size:clamp(19px,4vw,27px);line-height:1.2;margin:3px 0 0}.brand p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:12px;white-space:nowrap}.dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
+.card{background:linear-gradient(160deg,#10291d,#0b1d14);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}.hidden{display:none!important}
+.layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:18px;align-items:start}
+h2{font-size:20px;line-height:1.25;margin:0 0 7px}h3{font-size:16px;margin:0 0 12px}.muted{color:var(--muted)}.small{font-size:12px;color:var(--muted)}.section-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:16px}
+label{display:block;color:#d7e9db;font-size:13px;font-weight:700;margin:13px 0 6px}
+input,select,textarea{width:100%;background:#07170f;color:var(--text);border:1px solid #2c4a37;border-radius:11px;padding:12px 13px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #8ee0a41c}textarea{min-height:125px;resize:vertical}
+button{border:0;border-radius:11px;padding:11px 15px;font-weight:800;transition:.15s}button:hover{filter:brightness(1.08);transform:translateY(-1px)}button:disabled{opacity:.55;cursor:not-allowed;transform:none}
+.primary{background:var(--green);color:#082012}.secondary{background:#193a27;color:var(--text);border:1px solid #315a3f}.danger{background:#3a201e;color:#ffd2cb;border:1px solid #70413a}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.actions button{flex:1}
+.notice{padding:11px 13px;border:1px solid var(--line);border-radius:11px;color:var(--muted);font-size:13px;margin-top:12px}.notice.error{color:var(--red);border-color:#6c3934}.notice.success{color:var(--green);border-color:#326b43}
+.check{display:flex;gap:10px;align-items:flex-start;margin:14px 0}.check input{width:auto;margin-top:5px;accent-color:var(--green)}.check label{margin:0;font-weight:500;color:var(--muted)}
+.auth-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.auth-card{max-width:560px;margin:5vh auto}
+.tabs{display:flex;gap:7px;background:#07170f;padding:5px;border-radius:12px;margin:16px 0}.tabs button{flex:1;background:transparent;color:var(--muted);padding:9px}.tabs button.active{background:#1b3b28;color:var(--green)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}.stat{background:#0b1d14;border:1px solid var(--line);padding:14px;border-radius:14px}.stat strong{display:block;font-size:24px;color:var(--green)}.stat span{font-size:12px;color:var(--muted)}
+.item{border:1px solid var(--line);background:#0a1b12;border-radius:14px;padding:15px;margin-top:11px}.item-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}.tag{display:inline-block;border:1px solid #31583c;background:#173323;color:#bcecc5;padding:4px 8px;border-radius:999px;font-size:11px;font-weight:800}.status{font-size:11px;font-weight:800;border-radius:999px;padding:4px 8px;background:#2b3020;color:var(--amber)}.status.selesai{background:#173b28;color:var(--green)}.status.diproses{background:#183248;color:#a9dcff}.item p{white-space:pre-wrap;overflow-wrap:anywhere;margin:12px 0;color:#dcebe0}.item footer{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px solid #1e3928;padding-top:10px;color:var(--muted);font-size:12px}.reply{margin-top:12px;padding:12px;border-left:3px solid var(--green2);background:#10291b;border-radius:0 10px 10px 0}.reply b{font-size:12px;color:var(--green)}.reply p{margin:5px 0 0;font-size:13px}
+.admin-controls{display:grid;grid-template-columns:1fr 1fr;gap:10px}.admin-controls label{margin-top:0}.admin-controls textarea{min-height:85px}
+.empty{text-align:center;padding:28px 12px;color:var(--muted);border:1px dashed #2b4b35;border-radius:14px;margin-top:12px}
+.footer{text-align:center;color:#789582;font-size:12px;padding:26px 0 0}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.top{align-items:flex-start}.pill{display:none}.stats{grid-template-columns:repeat(2,1fr)}.card{padding:17px}.auth-card{margin:2vh auto}.admin-controls{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo">R</div>
+      <div><div class="eyebrow">Paskibra · SMAN 1 Batujaya</div><h1>Ruang Aspirasi</h1><p>Satu suara, satu langkah untuk bertumbuh.</p></div>
+    </div>
+    <div class="pill"><span class="dot"></span> Sistem aspirasi anggota</div>
+  </header>
+
+  <section id="authView" class="card auth-card">
+    <div class="eyebrow">Akses anggota</div>
+    <h2 id="authTitle" style="margin-top:6px">Masuk ke akun</h2>
+    <p class="muted">Masuk untuk mengirim aspirasi dan memantau tindak lanjutnya secara pribadi.</p>
+    <div class="tabs"><button id="tabLogin" class="active" type="button" onclick="setAuthMode('login')">Masuk</button><button id="tabSignup" type="button" onclick="setAuthMode('signup')">Daftar anggota</button></div>
+    <form id="authForm">
+      <div id="signupFields" class="hidden">
+        <label for="fullName">Nama lengkap</label><input id="fullName" autocomplete="name" maxlength="100" placeholder="Nama sesuai data anggota">
+        <label for="className">Kelas</label><input id="className" maxlength="30" placeholder="Contoh: XI-3">
+      </div>
+      <label for="email">Email</label><input id="email" type="email" autocomplete="email" required placeholder="email@contoh.com">
+      <label for="password">Password</label><input id="password" type="password" minlength="8" autocomplete="current-password" required placeholder="Minimal 8 karakter">
+      <div class="actions"><button id="authSubmit" class="primary" type="submit">Masuk</button></div>
+      <div id="authMsg" class="notice hidden" role="status"></div>
+    </form>
+    <p class="small">Gunakan akun pribadi. Jangan bagikan password kepada teman atau pengurus lain.</p>
+  </section>
+
+  <main id="memberView" class="hidden">
+    <div class="section-head"><div><div class="eyebrow">Ruang pribadi</div><h2 id="welcomeTitle">Halo, anggota.</h2><div class="muted" id="profileLabel"></div></div><button class="secondary" onclick="logout()">Keluar</button></div>
+    <div id="profileCard" class="card" style="margin-bottom:18px">
+      <h3>Profil anggota</h3><p class="muted small">Nama dan kelas hanya dipakai jika kamu memilih mengirim aspirasi dengan identitas. Kamu bisa memperbaruinya di sini.</p>
+      <div class="auth-grid"><div><label for="editName">Nama lengkap</label><input id="editName" maxlength="100"></div><div><label for="editClass">Kelas</label><input id="editClass" maxlength="30" placeholder="Contoh: XI-3"></div></div>
+      <div class="actions"><button class="secondary" onclick="saveProfile()">Simpan profil</button></div><div id="profileMsg" class="notice hidden"></div>
+    </div>
+    <div id="memberLayout" class="layout">
+      <section class="card">
+        <div class="eyebrow">Sampaikan suara</div><h2 style="margin-top:5px">Kirim aspirasi</h2>
+        <p class="muted">Sampaikan dengan jelas dan tetap saling menghormati. Aspirasi yang anonim tetap dapat kamu lacak melalui akun ini.</p>
+        <form id="aspirasiForm">
+          <label for="category">Kategori</label>
+          <select id="category" required>
+            <option>Lingkungan & Kebersihan</option><option>Latihan & Kedisiplinan</option><option>Senior-Junior</option><option>Kegiatan & Program</option><option>Sarana & Prasarana</option><option>Lainnya</option>
+          </select>
+          <label for="message">Isi aspirasi</label><textarea id="message" minlength="10" maxlength="3000" required placeholder="Tuliskan masukan, kendala, atau ide program secara jelas (10–3000 karakter)."></textarea>
+          <div class="check"><input id="anonymous" type="checkbox"><label for="anonymous"><strong>Kirim sebagai anonim</strong><br>Nama dan kelas tidak ditampilkan kepada ketua pada dashboard. Sistem tetap menghubungkan aspirasi dengan akunmu agar kamu bisa melacak statusnya.</label></div>
+          <div class="actions"><button class="primary" id="sendBtn" type="submit">Kirim aspirasi</button></div>
+          <div id="sendMsg" class="notice hidden" role="status"></div>
+        </form>
+      </section>
+      <section class="card">
+        <div class="section-head"><div><div class="eyebrow">Pelacakan akun</div><h2>Aspirasi saya</h2></div><button class="secondary" onclick="loadMyAspirasi()">↻</button></div>
+        <p class="muted small">Status dan tanggapan hanya dapat dilihat oleh akun pengirim dan admin ketua.</p>
+        <div id="myList"><div class="empty">Memuat aspirasi…</div></div>
+      </section>
+    </div>
+  </main>
+
+  <main id="adminView" class="hidden">
+    <div class="section-head"><div><div class="eyebrow">Area ketua</div><h2>Dashboard pengelolaan aspirasi</h2><div class="muted" id="adminEmail"></div></div><button class="secondary" onclick="logout()">Keluar</button></div>
+    <div class="stats">
+      <div class="stat"><strong id="sTotal">0</strong><span>Total aspirasi</span></div><div class="stat"><strong id="sReceived">0</strong><span>Diterima</span></div><div class="stat"><strong id="sProcess">0</strong><span>Diproses</span></div><div class="stat"><strong id="sDone">0</strong><span>Selesai</span></div>
+    </div>
+    <section class="card">
+      <div class="section-head"><div><h2>Daftar aspirasi</h2><p class="muted small">Aspirasi anonim tidak menampilkan nama maupun kelas pengirim.</p></div><button class="secondary" onclick="loadAdminAspirasi()">↻ Refresh</button></div>
+      <label for="adminFilter">Filter status</label><select id="adminFilter" onchange="renderAdminList()"><option value="Semua">Semua status</option><option>Diterima</option><option>Dikaji</option><option>Diproses</option><option>Selesai</option></select>
+      <div id="adminList"><div class="empty">Memuat aspirasi…</div></div>
+    </section>
+  </main>
+  <footer class="footer">Ruang Aspirasi · Paskibra SMAN 1 Batujaya<br>Gunakan ruang ini dengan bijak, jujur, dan saling menghargai.</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/* GANTI DUA NILAI DI BAWAH DENGAN DATA DARI PROYEK SUPABASE BARU.
+   Publishable/anon key boleh berada di frontend jika RLS sudah benar.
+   JANGAN pernah gunakan service_role/secret key di sini. */
+
+const SUPABASE_URL = "https://opwiuehzhnfgmfngydrm.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_k-ohOwphd4-sqzsUCvDcEw_-lU3ShJG";
+
+const sb = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY
+);
+
+
+let authMode = "login";
+let currentUser = null;
+let currentProfile = null;
+let adminRows = [];
+
+function el(id){ return document.getElementById(id); }
+function show(id, yes=true){ el(id).classList.toggle("hidden", !yes); }
+function message(id, text, type=""){ el(id).textContent=text; el(id).className="notice"+(type ? " "+type : ""); show(id,true); }
+function clearMessage(id){ show(id,false); }
+function escapeHtml(value){ return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c])); }
+function dateLabel(value){ return new Date(value).toLocaleString("id-ID",{dateStyle:"medium",timeStyle:"short"}); }
+function statusClass(status){ return status === "Selesai" ? "selesai" : status === "Diproses" ? "diproses" : ""; }
+function setAuthMode(mode){
+  authMode=mode;
+  el("tabLogin").classList.toggle("active",mode==="login");
+  el("tabSignup").classList.toggle("active",mode==="signup");
+  show("signupFields",mode==="signup");
+  el("authTitle").textContent=mode==="login" ? "Masuk ke akun" : "Daftar akun anggota";
+  el("authSubmit").textContent=mode==="login" ? "Masuk" : "Buat akun";
+  el("password").autocomplete=mode==="login" ? "current-password" : "new-password";
+  clearMessage("authMsg");
+}
+el("authForm").addEventListener("submit", async e=>{
+  e.preventDefault(); clearMessage("authMsg");
+  const email=el("email").value.trim();
+  const password=el("password").value;
+  el("authSubmit").disabled=true;
+  try{
+    if(authMode==="signup"){
+      const fullName=el("fullName").value.trim(), className=el("className").value.trim();
+      if(!fullName || !className){ message("authMsg","Nama dan kelas wajib diisi saat membuat akun.","error"); return; }
+      const {data,error}=await sb.auth.signUp({email,password,options:{data:{full_name:fullName,class_name:className}}});
+      if(error) throw error;
+      if(!data.session){
+        message("authMsg","Pendaftaran diterima. Jika konfirmasi email diaktifkan pada Supabase, buka email untuk mengonfirmasi akun, lalu masuk.","success");
+      }else{
+        message("authMsg","Akun berhasil dibuat. Menyiapkan ruang aspirasi…","success");
+        await routeUser(data.session.user);
+      }
+    }else{
+      const {data,error}=await sb.auth.signInWithPassword({email,password});
+      if(error) throw error;
+      await routeUser(data.user);
+    }
+  }catch(err){ message("authMsg",err.message || "Terjadi kesalahan saat autentikasi.","error"); }
+  finally{ el("authSubmit").disabled=false; }
+});
+
+async function routeUser(user){
+  currentUser=user;
+  show("authView",false); show("memberView",false); show("adminView",false);
+  const {data:isAdmin,error:adminErr}=await sb.rpc("is_admin");
+  if(adminErr) throw adminErr;
+  if(isAdmin){
+    el("adminEmail").textContent=user.email || "";
+    show("adminView",true);
+    await loadAdminAspirasi();
+  }else{
+    show("memberView",true);
+    await loadProfile();
+    await loadMyAspirasi();
+  }
+}
+async function loadProfile(){
+  let {data,error}=await sb.from("profiles").select("id,full_name,class_name").eq("id",currentUser.id).maybeSingle();
+  if(error) throw error;
+  if(!data){
+    // Biasanya profil dibuat oleh trigger saat pendaftaran; beri pesan jelas jika trigger belum terpasang.
+    throw new Error("Profil belum ditemukan. Pastikan file schema.sql sudah dijalankan di Supabase.");
+  }
+  currentProfile=data;
+  el("welcomeTitle").textContent="Halo, "+(data.full_name || "anggota")+"!";
+  el("profileLabel").textContent=(data.class_name || "Kelas belum diisi")+" · Aspirasi terhubung ke akun ini";
+  el("editName").value=data.full_name || "";
+  el("editClass").value=data.class_name || "";
+}
+async function saveProfile(){
+  const full_name=el("editName").value.trim(), class_name=el("editClass").value.trim();
+  if(!full_name || !class_name){ message("profileMsg","Nama dan kelas tidak boleh kosong.","error"); return; }
+  const {error}=await sb.from("profiles").update({full_name,class_name}).eq("id",currentUser.id);
+  if(error){ message("profileMsg",error.message,"error"); return; }
+  message("profileMsg","Profil berhasil diperbarui.","success");
+  await loadProfile();
+}
+el("aspirasiForm").addEventListener("submit",async e=>{
+  e.preventDefault(); clearMessage("sendMsg");
+  const kategori=el("category").value, pesan=el("message").value.trim(), anonim=el("anonymous").checked;
+  if(pesan.length<10){ message("sendMsg","Isi aspirasi minimal 10 karakter.","error"); return; }
+  el("sendBtn").disabled=true;
+  try{
+    const {data,error}=await sb.rpc("submit_aspirasi",{p_kategori:kategori,p_pesan:pesan,p_anonymous:anonim});
+    if(error) throw error;
+    el("message").value=""; el("anonymous").checked=false;
+    message("sendMsg","Aspirasi berhasil dikirim. ID referensi: "+String(data).slice(0,8).toUpperCase()+". Kamu bisa memantau statusnya di bagian Aspirasi Saya.","success");
+    await loadMyAspirasi();
+  }catch(err){ message("sendMsg",err.message || "Aspirasi gagal dikirim.","error"); }
+  finally{el("sendBtn").disabled=false;}
+});
+async function loadMyAspirasi(){
+  el("myList").innerHTML='<div class="empty">Memuat aspirasi…</div>';
+  const {data,error}=await sb.from("aspirasi").select("id,kategori,pesan,anonim,status,tanggapan_admin,created_at,updated_at").order("created_at",{ascending:false});
+  if(error){el("myList").innerHTML='<div class="empty">'+escapeHtml(error.message)+'</div>';return;}
+  if(!data || !data.length){el("myList").innerHTML='<div class="empty">Kamu belum mengirim aspirasi.</div>';return;}
+  el("myList").innerHTML=data.map(x=>`<article class="item">
+    <div class="item-top"><span class="tag">${escapeHtml(x.kategori)}</span><span class="status ${statusClass(x.status)}">${escapeHtml(x.status)}</span></div>
+    <p>${escapeHtml(x.pesan)}</p>
+    <footer><span>${dateLabel(x.created_at)}</span><span>${x.anonim?"Dikirim anonim":"Dikirim dengan nama"}</span></footer>
+    ${x.tanggapan_admin?`<div class="reply"><b>TANGGAPAN KETUA</b><p>${escapeHtml(x.tanggapan_admin)}</p></div>`:'<div class="small" style="margin-top:10px">Belum ada tanggapan dari ketua.</div>'}
+  </article>`).join("");
+}
+async function loadAdminAspirasi(){
+  el("adminList").innerHTML='<div class="empty">Memuat aspirasi…</div>';
+  const {data,error}=await sb.from("aspirasi").select("id,kategori,pesan,anonim,nama_pengirim,kelas_pengirim,status,tanggapan_admin,created_at").order("created_at",{ascending:false});
+  if(error){el("adminList").innerHTML='<div class="empty">'+escapeHtml(error.message)+'</div>';return;}
+  adminRows=data||[];
+  el("sTotal").textContent=adminRows.length;
+  el("sReceived").textContent=adminRows.filter(x=>x.status==="Diterima").length;
+  el("sProcess").textContent=adminRows.filter(x=>x.status==="Diproses"||x.status==="Dikaji").length;
+  el("sDone").textContent=adminRows.filter(x=>x.status==="Selesai").length;
+  renderAdminList();
+}
+function renderAdminList(){
+  const filter=el("adminFilter").value;
+  const rows=adminRows.filter(x=>filter==="Semua"||x.status===filter);
+  if(!rows.length){el("adminList").innerHTML='<div class="empty">Belum ada aspirasi untuk filter ini.</div>';return;}
+  el("adminList").innerHTML=rows.map(x=>`<article class="item">
+    <div class="item-top"><span class="tag">${escapeHtml(x.kategori)}</span><span class="status ${statusClass(x.status)}">${escapeHtml(x.status)}</span></div>
+    <div class="small" style="margin-top:9px">Pengirim: <strong>${x.anonim?"Anonim":escapeHtml(x.nama_pengirim||"Nama tidak tersedia")}</strong>${x.anonim?"":' · '+escapeHtml(x.kelas_pengirim||"Kelas tidak tersedia")}</div>
+    <p>${escapeHtml(x.pesan)}</p><footer><span>${dateLabel(x.created_at)}</span><span>Ref: ${escapeHtml(x.id.slice(0,8).toUpperCase())}</span></footer>
+    <div class="admin-controls" style="margin-top:14px">
+      <div><label for="status-${x.id}">Status tindak lanjut</label><select id="status-${x.id}">${["Diterima","Dikaji","Diproses","Selesai"].map(s=>`<option ${s===x.status?"selected":""}>${s}</option>`).join("")}</select></div>
+      <div><label for="reply-${x.id}">Tanggapan ketua</label><textarea id="reply-${x.id}" maxlength="2000" placeholder="Tulis tanggapan atau langkah tindak lanjut…">${escapeHtml(x.tanggapan_admin||"")}</textarea></div>
+    </div>
+    <div class="actions"><button class="primary" onclick="saveAdminRow('${x.id}')">Simpan tindak lanjut</button></div>
+  </article>`).join("");
+}
+async function saveAdminRow(id){
+  const status=el("status-"+id).value, tanggapan_admin=el("reply-"+id).value.trim();
+  const {error}=await sb.from("aspirasi").update({status,tanggapan_admin}).eq("id",id);
+  if(error){alert("Gagal menyimpan: "+error.message);return;}
+  await loadAdminAspirasi();
+}
+async function logout(){
+  await sb.auth.signOut();
+  currentUser=null; currentProfile=null; adminRows=[];
+  show("memberView",false);show("adminView",false);show("authView",true);
+  el("authForm").reset();setAuthMode("login");
+}
+(async function init(){
+  if(SUPABASE_URL.includes("YOUR_PROJECT_REF") || SUPABASE_PUBLISHABLE_KEY.includes("YOUR_")){
+    message("authMsg","Sebelum digunakan, isi SUPABASE_URL dan SUPABASE_PUBLISHABLE_KEY di bagian awal kode HTML dengan data proyek Supabase baru.","error");
+  }
+  const {data,error}=await sb.auth.getSession();
+  if(error){console.error(error);return;}
+  if(data.session){
+    try{await routeUser(data.session.user);}
+    catch(err){show("authView",true);message("authMsg",err.message||"Tidak bisa membuka dashboard.","error");}
+  }
+})();
+</script>
+</body>
+</html>
